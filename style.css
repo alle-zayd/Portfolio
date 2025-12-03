@@ -69,3 +69,9 @@ body.dark button {
 body.dark button:hover {
     background-color: #ccc;
 }
+case-study-link {
+    color: #1c216d;
+    margin-top: 15px;
+    display: block;
+    text-decoration: none;
+}
