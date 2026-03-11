@@ -1,62 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Student Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <header>
-         <h1 id="name">Alle Zayd Abusaman</h1>
-         <p id="tagline">Aspiring Web Developer & Software Enthusiast</p>
-         <img src="formal picture.jpg" alt="Profile Picture" id="profile-img">
-         <p id="course-year">Computer Science - 2nd Year</p>
-         <button id="theme-toggle">Switch Theme</button>
-      </header>
-      
-      <section id="achievements">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>Successfully Finished Data Structure & Algorithm</li>
-            <li>Passed all major subjects</li>
-         </ul>
-      </section>
-      
-      <section id="projects">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>Food Ordering Kiosk</li>
-            <li>Borrowing System</li>
-         </ul>
-      </section>
-      <section id="Case-Study-link">
-         <h2>
-            Formative 2 Landing Page Link
-         </h2>
-         <p>
-            It's a first experience in making web pages and I learned a few things. 
-         </p>
-         <a href="https://alle-zayd.github.io/StrokeSense/">This is the link for the Landing Page</a>
-      </section>
-      <section id="MachineProblem">
-         <h2>
-           Formative 3 Machine Problem Link
-         </h2>
-         <a href ="https://alle-zayd.github.io/Machine-Problem/">Link for the Activity</a>
-      </section>
-         <section>
-            <h2>
-               M1 Summative Link.
-            </h2>
-            <a href="https://github.com/alle-zayd/m1_summativeExam_abusaman">Link for the M1 Summative Exam Project</a>
-         </section>
-      <section>
-         <h2>
-            M2 Summative Web Application demo.
-         </h2>
-         <a href="https://davao-clean-ai.vercel.app/">Link for the Website Demo</a>
-      </section>
-      <script src="script.js"></script>
-   </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alle Zayd Abusaman — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="container">
+      <p class="hero-eyebrow">Portfolio — 2025</p>
+      <h1 id="name">
+        Alle Zayd<br>
+        <span class="name-accent">Abusaman</span>
+      </h1>
+      <p id="tagline">Aspiring Web Developer &amp; Software Enthusiast</p>
+      <p id="course-year">Computer Science · 2nd Year</p>
+
+      <div class="hero-bottom">
+        <img src="formal picture.jpg" alt="Profile Picture" id="profile-img">
+        <div class="hero-meta">
+          <strong>Based in Davao, PH</strong>
+          Building things for the web
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      scroll
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label reveal">Languages &amp; Tools</p>
+      <h2 class="section-title reveal reveal-delay-1">Tech Stack</h2>
+
+      <div class="skills-grid">
+        <div class="skill-chip reveal reveal-delay-1">
+          <span class="skill-icon">☕</span>
+          <span class="skill-name">Java</span>
+          <span class="skill-type">Language</span>
+        </div>
+        <div class="skill-chip reveal reveal-delay-1">
+          <span class="skill-icon">⚙️</span>
+          <span class="skill-name">C++</span>
+          <span class="skill-type">Language</span>
+        </div>
+        <div class="skill-chip reveal reveal-delay-2">
+          <span class="skill-icon">🔷</span>
+          <span class="skill-name">C#</span>
+          <span class="skill-type">Language</span>
+        </div>
+        <div class="skill-chip reveal reveal-delay-2">
+          <span class="skill-icon">🌐</span>
+          <span class="skill-name">HTML/CSS</span>
+          <span class="skill-type">Web</span>
+        </div>
+        <div class="skill-chip reveal reveal-delay-2">
+          <span class="skill-icon">📜</span>
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-type">Web</span>
+        </div>
+        <div class="skill-chip reveal reveal-delay-3">
+          <span class="skill-icon">🔵</span>
+          <span class="skill-name">TypeScript</span>
+          <span class="skill-type">Web</span>
+        </div>
+        <div class="skill-chip reveal reveal-delay-3">
+          <span class="skill-icon">⚛️</span>
+          <span class="skill-name">React</span>
+          <span class="skill-type">Framework</span>
+        </div>
+        <div class="skill-chip reveal reveal-delay-3">
+          <span class="skill-icon">🎨</span>
+          <span class="skill-name">Tailwind</span>
+          <span class="skill-type">CSS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ACHIEVEMENTS ── -->
+  <section id="achievements">
+    <div class="container">
+      <p class="section-label reveal">Recognition</p>
+      <h2 class="section-title reveal reveal-delay-1">Achievements &amp; Certifications</h2>
+
+      <div class="achievement-list">
+        <div class="achievement-item reveal reveal-delay-1">
+          <span class="achievement-icon">🏆</span>
+          <span class="achievement-text">Successfully completed Data Structures &amp; Algorithms</span>
+        </div>
+        <div class="achievement-item reveal reveal-delay-2">
+          <span class="achievement-icon">✅</span>
+          <span class="achievement-text">Passed all major subjects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label reveal">Work</p>
+      <h2 class="section-title reveal reveal-delay-1">Previous Projects</h2>
+
+      <div class="project-grid">
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-icon">🍔</div>
+          <div class="project-title">Food Ordering Kiosk</div>
+          <div class="project-desc">An interactive self-service kiosk interface for ordering food, designed to streamline the customer experience.</div>
+        </div>
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-icon">📚</div>
+          <div class="project-title">Borrowing System</div>
+          <div class="project-desc">A library or inventory borrowing management system to track item loans and returns.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LINKS ── -->
+  <section id="links">
+    <div class="container">
+      <p class="section-label reveal">Coursework</p>
+      <h2 class="section-title reveal reveal-delay-1">Formatives &amp; Summatives</h2>
+
+      <div class="link-grid">
+        <a href="https://alle-zayd.github.io/StrokeSense/" target="_blank" class="link-card link-card-f2 reveal reveal-delay-1">
+          <span class="link-card-badge">Formative 2</span>
+          <span class="link-card-title">StrokeSense Landing Page</span>
+          <span class="link-card-desc">My first experience building a full web page — a landing page for StrokeSense. Learned foundational web layout skills.</span>
+          <span class="link-card-arrow">View project →</span>
+        </a>
+
+        <a href="https://alle-zayd.github.io/Machine-Problem/" target="_blank" class="link-card link-card-f3 reveal reveal-delay-2">
+          <span class="link-card-badge">Formative 3</span>
+          <span class="link-card-title">Machine Problem</span>
+          <span class="link-card-desc">A programming activity focusing on logic, problem-solving, and code structure.</span>
+          <span class="link-card-arrow">View activity →</span>
+        </a>
+
+        <a href="https://github.com/alle-zayd/m1_summativeExam_abusaman" target="_blank" class="link-card link-card-m1 reveal reveal-delay-3">
+          <span class="link-card-badge">M1 Summative</span>
+          <span class="link-card-title">Module 1 Exam Project</span>
+          <span class="link-card-desc">Repository for the Module 1 summative examination project, showcasing early development milestones.</span>
+          <span class="link-card-arrow">View on GitHub →</span>
+        </a>
+
+        <a href="https://davao-clean-ai.vercel.app/" target="_blank" class="link-card link-card-m2 reveal reveal-delay-4">
+          <span class="link-card-badge">M2 Summative</span>
+          <span class="link-card-title">Davao Clean AI Web App</span>
+          <span class="link-card-desc">A deployed web application demo built for the Module 2 summative, live on Vercel.</span>
+          <span class="link-card-arrow">View live demo →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Alle Zayd Abusaman &mdash; Computer Science, 2nd Year</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
