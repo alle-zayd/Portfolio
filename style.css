@@ -157,14 +157,14 @@ section + section { border-top: 1px solid var(--border); }
 }
 
 #profile-img {
-  width: 64px; height: 64px;
+  width: 200px; height: 200px;
   border-radius: 50%;
   border: 2px solid var(--accent);
   object-fit: cover;
   box-shadow: 0 0 0 4px rgba(110,231,183,0.12);
 }
 
-.hero-meta { font-size: 0.85rem; color: var(--muted); }
+.hero-meta { font-size: 1.1rem; color: var(--muted); }
 .hero-meta strong { color: var(--text); font-weight: 500; display: block; }
 
 .scroll-hint {
@@ -211,13 +211,26 @@ section + section { border-top: 1px solid var(--border); }
 }
 
 /* ─── SKILLS ─── */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+.skill-carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 8px 0;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
   gap: 12px;
+  align-items: stretch;
+  will-change: transform;
 }
 
 .skill-chip {
+  min-width: 180px;
+  flex: 0 0 auto;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -232,6 +245,12 @@ section + section { border-top: 1px solid var(--border); }
   border-color: var(--accent);
   transform: translateY(-3px);
   box-shadow: 0 8px 30px rgba(110,231,183,0.1);
+}
+
+@media (max-width: 700px) {
+  .skill-chip {
+    min-width: 150px;
+  }
 }
 
 .skill-icon { font-size: 1.4rem; }
